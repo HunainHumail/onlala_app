@@ -1,6 +1,6 @@
 # onlala_app
 
-OutSource Proejct
+OutSource Project
 
 ## Getting Started
 
