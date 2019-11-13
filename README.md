@@ -1,6 +1,6 @@
 # onlala_app
 
-A new Flutter application.
+OutSource Proejct
 
 ## Getting Started
 
