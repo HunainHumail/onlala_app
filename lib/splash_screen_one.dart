@@ -28,7 +28,7 @@ class _SplashScreenOneState extends State<SplashScreenOne> {
               clipper: ClippingClass(),
               child: Center(
                 child: Text(
-                 "TEST Is HERE",
+                 "TEST Is there",
                   textDirection: TextDirection.ltr,
                   style: TextStyle(
                   decoration: TextDecoration.none,
