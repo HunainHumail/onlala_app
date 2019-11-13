@@ -8,35 +8,60 @@ class _SplashScreenOneState extends State<SplashScreenOne> {
   @override
   Widget build(BuildContext context) {
     
-    AssetImage assetImage = AssetImage ('assets/images/logo.png');
-    // TODO: implement build
-    return Scaffold(
-      body: Stack(
-        fit: StackFit.expand,
-        children: <Widget>[
-          Container(
-            decoration: BoxDecoration(
-              color: new Color(0xff622F74),
-              gradient: LinearGradient(
-                  colors: [new Color(0xff622F74), new Color(0xffde5cbc)],
-                  begin: Alignment.centerRight,
-                  end: Alignment.centerLeft),
+    AssetImage Logo = AssetImage ('assets/images/logo.png');
+    return Column(
+      children: <Widget>[
+        Expanded(
+          child: Container(
+            color: Colors.white,
+            child: CircleAvatar(
+              backgroundColor: Colors.white,
+              radius: 210.0,
+              child: Image( image: Logo),
             ),
-          ),
-          Column( mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              CircleAvatar(
-                backgroundColor: Colors.white,
-                radius: 75.0,
-                child: Image( image: assetImage,
-                ),
-              )
-            ],
           )
-        ],
-      ),
+        ),
+        Expanded(
+          child: Container (
+            color: Color.fromRGBO(21,83,100,50),
+            child: ClipPath(
+              clipper: ClippingClass(),
+              child: Center(
+                child: Text(
+                 "TEST Is HERE",
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(
+                  decoration: TextDecoration.none,
+                  fontSize: 20,
+                  fontFamily: 'Rubik',
+                  ),
+                ),
+              ),
+            ),
+
+          ),
+
+        ),
+      ],
+
     );
 
+  }
+
+}
+
+
+class ClippingClass extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    // TODO: implement getClip
+    return null;
+  }
+
+  @override
+  bool shouldReclip(CustomClipper oldClipper) {
+    // TODO: implement shouldReclip
+    return null;
   }
 
 }
