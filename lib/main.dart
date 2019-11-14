@@ -12,7 +12,8 @@ void main() {
       ),
 
       debugShowCheckedModeBanner: false,
-      home: OnboardingPage(),
+      // home: OnboardingPage(),
+      home: SplashScreenOne(),
     )
   );
 }
