@@ -35,7 +35,7 @@ class _SplashScreenOneState extends State<SplashScreenOne> {
                           style: TextStyle(
                               fontFamily: 'Montserrat',
                               color: Colors.white,
-                              fontWeight: FontWeight.normal,
+                              fontWeight: FontWeight.w300,
                               fontSize: 30.0)),
                     ),
                   ),
@@ -48,12 +48,13 @@ class _SplashScreenOneState extends State<SplashScreenOne> {
                                 style: TextStyle(
                                     fontFamily: 'Montserrat',
                                     color: Colors.white,
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w700,
                                     fontSize: 30.0)),
                             SizedBox(width: 10.0),
                             Text('Business Platform',
                                 style: TextStyle(
                                     fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.w300,
                                     color: Colors.white,
                                     fontSize: 30.0))
                           ],
@@ -65,6 +66,7 @@ class _SplashScreenOneState extends State<SplashScreenOne> {
                         child: Text('Increase sales prompt business and engage with customers',
                             style: TextStyle(
                                 fontFamily: 'Montserrat',
+                                fontWeight: FontWeight.w100,
                                 color: Colors.white,
                                 fontSize: 20.0,
                                 ),
