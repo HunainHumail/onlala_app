@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:onlala_app/ResetPassword/Reset_pass_2.dart';
+import 'package:onlala_app/ResetPassword/Reset_pass_3.dart';
 import 'package:onlala_app/onboarding_screen.dart';
+import 'ResetPassword/Reset_pass_1.dart';
 import 'splash_screen_one.dart';
 
 void main() {
@@ -13,7 +16,7 @@ void main() {
 
       debugShowCheckedModeBanner: false,
       // home: OnboardingPage(),
-      home: SplashScreenOne(),
+      home: ResetPassword_third(),
     )
   );
 }
