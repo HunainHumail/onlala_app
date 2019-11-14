@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:onlala_app/onboarding_screen.dart';
 import 'splash_screen_one.dart';
 
 void main() {
@@ -11,7 +12,7 @@ void main() {
       ),
 
       debugShowCheckedModeBanner: false,
-      home: SplashScreenOne(),
+      home: OnboardingPage(),
     )
   );
 }
