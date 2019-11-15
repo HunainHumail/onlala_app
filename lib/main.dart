@@ -3,6 +3,7 @@ import 'package:onlala_app/ResetPassword/Reset_pass_2.dart';
 import 'package:onlala_app/ResetPassword/Reset_pass_3.dart';
 import 'package:onlala_app/onboarding_screen.dart';
 import 'ResetPassword/Reset_pass_1.dart';
+import 'ResetPassword/Reset_pass_4.dart';
 import 'splash_screen_one.dart';
 
 void main() {

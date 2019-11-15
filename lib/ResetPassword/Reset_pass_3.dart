@@ -44,37 +44,34 @@ class _ResetPassword_thirdState extends State<ResetPassword_third> {
                   )),
               SizedBox(height: 10.0),
               Padding(
-                  padding: EdgeInsets.only(left: 30.0, right: 30.0),
-                  child: Container(
-                      height: 50.0,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(239, 244, 245, 1),
-                        borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(5.0),
-                            topRight: Radius.circular(5.0),
-                            bottomLeft: Radius.circular(5.0),
-                            bottomRight: Radius.circular(5.0)),
+                padding: EdgeInsets.only(left: 30.0, right: 30.0),
+                child: Container(
+                  height: 50.0,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(239, 244, 245, 1),
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(5.0),
+                        topRight: Radius.circular(5.0),
+                        bottomLeft: Radius.circular(5.0),
+                        bottomRight: Radius.circular(5.0)),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 7.0, left: 22, right: 22),
+                    child: TextField(
+                      textDirection: TextDirection.ltr,
+                      keyboardType: TextInputType.text,
+                      textInputAction: TextInputAction.next,
+                      autofocus: true,
+                      // obscureText: true,
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        counterText: "",
                       ),
-                      child: Row(
-                        children: <Widget>[
-                          Padding(
-                            padding:
-                                EdgeInsets.only(top: 7.0, left: 22, right: 22),
-                            child: TextFormField(
-                              textDirection: TextDirection.ltr,
-                              keyboardType: TextInputType.number,
-                              textInputAction: TextInputAction.done,
-                              autofocus: true,
-                              // obscureText: true,
-                              decoration: InputDecoration(
-                                border: InputBorder.none,
-                                counterText: "",
-                              ),
-                              style: TextStyle(fontSize: 20.0),
-                            ),
-                          ),
-                        ],
-                      ))),
+                      style: TextStyle(fontSize: 28.0),
+                    ),
+                  ),
+                ),
+              ),
               SizedBox(height: 10.0),
               Padding(
                   padding: EdgeInsets.only(left: 30.0),
@@ -88,9 +85,37 @@ class _ResetPassword_thirdState extends State<ResetPassword_third> {
                   )),
               SizedBox(height: 10.0),
               Padding(
-                  padding: EdgeInsets.only(left: 30.0, right: 30.0),
+                padding: EdgeInsets.only(left: 30.0, right: 30.0),
+                child: Container(
+                  height: 50.0,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(239, 244, 245, 1),
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(5.0),
+                        topRight: Radius.circular(5.0),
+                        bottomLeft: Radius.circular(5.0),
+                        bottomRight: Radius.circular(5.0)),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 7.0, left: 22, right: 22),
+                    child: TextField(
+                      textDirection: TextDirection.ltr,
+                      keyboardType: TextInputType.text,
+                      textInputAction: TextInputAction.done,
+                      autofocus: true,
+                      // obscureText: true,
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        counterText: "",
+                      ),
+                      style: TextStyle(fontSize: 30.0),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(height: 50.0),
+              Center(
                   child: Container(
-                      height: 50.0,
                       decoration: BoxDecoration(
                         color: Color.fromRGBO(239, 244, 245, 1),
                         borderRadius: BorderRadius.only(
@@ -99,41 +124,24 @@ class _ResetPassword_thirdState extends State<ResetPassword_third> {
                             bottomLeft: Radius.circular(5.0),
                             bottomRight: Radius.circular(5.0)),
                       ),
-                      child: Row(
-                        children: <Widget>[
-                          Padding(
-                            padding:
-                                EdgeInsets.only(top: 7.0, left: 22, right: 22),
+                      child: SizedBox(
+                        width: 350.0,
+                        child: new RaisedButton(
+                          padding: const EdgeInsets.all(15.0),
+                          textColor: Colors.white,
+                          color: Color.fromRGBO(20, 90, 120, 1),
+                          onPressed: () {},
+                          child: new Text(
+                            "SET NEW PASSWORD",
+                            style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                color: Colors.white,
+                                fontWeight: FontWeight.w500,
+                                fontSize: 17.0),
+                            textAlign: TextAlign.center,
                           ),
-                        ],
-                      ))),
-              SizedBox(height: 50.0),
-              Center(
-                  child: Container(
-                decoration: BoxDecoration(
-                  color: Color.fromRGBO(239, 244, 245, 1),
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(5.0),
-                      topRight: Radius.circular(5.0),
-                      bottomLeft: Radius.circular(5.0),
-                      bottomRight: Radius.circular(5.0)),
-                ),
-                child: new RaisedButton(
-                  padding: const EdgeInsets.all(15.0),
-                  textColor: Colors.white,
-                  color: Color.fromRGBO(20, 90, 120, 1),
-                  onPressed: () {},
-                  child: new Text(
-                    "SET NEW PASSWORD",
-                    style: TextStyle(
-                        fontFamily: 'Montserrat',
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 17.0),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-              ))
+                        ),
+                      )))
             ],
           )
         ],
