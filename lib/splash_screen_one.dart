@@ -15,7 +15,8 @@ class _SplashScreenOneState extends State<SplashScreenOne> {
         children: <Widget>[
           CircleAvatar(
             radius: 150.0,
-            backgroundColor: Colors.white,
+            backgroundColor: Color.fromRGBO(30, 115, 148, 0.4),
+
             child: Image(image: Logo),
           ),
           Container(

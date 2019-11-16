@@ -100,7 +100,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
         ),
       )
           : RaisedButton(
-        onPressed: () => print('Get Started Now'),
+        onPressed: () {
+
+        },
         child: Container(
           height: Platform.isIOS ? 70 : 60,
           color: Colors.blue,
