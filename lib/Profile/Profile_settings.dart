@@ -12,13 +12,21 @@ class _ProfileSettingsState extends State<ProfileSettings> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(239, 244, 245, 1),
-      body: Stack(children: <Widget>[
-        Column(
-          children: <Widget>[
-            Row(children: <Widget>[Image()],)
-          ],
-        )
-      ],),
+      body: Stack(
+        children: <Widget>[
+          Column(
+            children: <Widget>[
+              Row(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('assets/images/back.png'),
+                  ),
+                ],
+              )
+            ],
+          )
+        ],
+      ),
     );
   }
 }
