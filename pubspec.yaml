@@ -62,6 +62,12 @@ flutter:
     - assets/images/payment.png
     - assets/images/help.png
     - assets/images/homedevice.png
+    - assets/images/appbar_background.png
+    - assets/images/edit.png
+    - assets/images/notifications.png
+    - assets/images/address.png
+    - assets/images/terms_and_cond.png
+    - assets/images/right-arrow.png
     - assets/images/onboarding1.png
     - assets/images/onboarding2.png
     - assets/images/onboarding3.png
