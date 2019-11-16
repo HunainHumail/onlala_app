@@ -85,7 +85,7 @@ class _AppHome extends State<AppHome> {
                           ),
                           Divider(
                             color: Colors.grey,
-                            thickness: 1,
+                            height: 1,
                           ),
                           Expanded(
                             child: ListView.builder(

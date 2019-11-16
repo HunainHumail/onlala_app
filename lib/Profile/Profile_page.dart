@@ -4,11 +4,28 @@ import 'package:flutter/widgets.dart';
 class ProfilePage extends StatefulWidget {
   ProfilePage({Key key}) : super(key: key);
 
+
+
+
   @override
   _ProfilePageState createState() => _ProfilePageState();
 }
 
+
+
 class _ProfilePageState extends State<ProfilePage> {
+
+
+  void _incrementTab(index) {
+    setState(() {
+      _cIndex = index;
+    });
+  }
+
+  int _cIndex = 0;
+  int _current = 0;
+
+
   @override
   Widget _buildcoverimage(Size Screensize) {
     return Container(
@@ -293,19 +310,6 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 
-
-  Widget _BottomNavigation(){
-    return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        backgroundColor: Colors.orangeAccent,
-        onPressed: (){},
-      ),
-
-      floatingActionButtonLocation:  FloatingActionButtonLocation.centerDocked,
-    );
-  }
-
 // Main Function : start
   Widget build(BuildContext context) {
     Size screensize = MediaQuery.of(context).size;
@@ -333,7 +337,39 @@ class _ProfilePageState extends State<ProfilePage> {
           )
         ],
       ),
-      
+            bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _cIndex,
+        type: BottomNavigationBarType.fixed,
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.home, color: Color.fromARGB(255, 0, 0, 0)),
+              title: new Text('Home')),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.shopping_cart,
+                  color: Color.fromARGB(255, 0, 0, 0)),
+              title: new Text('Products')),
+          BottomNavigationBarItem(
+              icon:
+                  Icon(Icons.chat_bubble, color: Color.fromARGB(255, 0, 0, 0)),
+              title: new Text('Message')),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle,
+                  color: Color.fromARGB(255, 0, 0, 0)),
+              title: new Text('Profile')),
+        ],
+        onTap: (index) {
+          _incrementTab(index);
+        },
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: new FloatingActionButton(
+        child: Icon(
+          Icons.add,
+          color: Colors.white,
+        ),
+        onPressed: null,
+        backgroundColor: Color.fromRGBO(33, 121, 152, 0.9),
+      ),
     );
   }
 // Main Function : End
