@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:onlala_app/Profile/Profile_messages.dart';
 import 'package:onlala_app/Profile/Profile_page.dart';
 import 'package:onlala_app/Profile/Profile_settings.dart';
 import 'package:onlala_app/ResetPassword/Reset_pass_2.dart';
@@ -12,14 +13,10 @@ void main() {
   runApp(
     MaterialApp(
       title: 'Splash',
-      theme: ThemeData(
-        primaryColor: new Color(0xff622F74),
-        accentColor: Colors.orange,
-      ),
 
       debugShowCheckedModeBanner: false,
       // home: OnboardingPage(),
-      home: ProfileSettings(),
+      home: ProfileMessages(),
     )
   );
 }

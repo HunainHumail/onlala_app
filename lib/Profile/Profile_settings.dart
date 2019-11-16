@@ -12,13 +12,17 @@ class _ProfileSettingsState extends State<ProfileSettings> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(239, 244, 245, 1),
-      body: Stack(
+      body: ListView(
         children: <Widget>[
           Column(
             children: <Widget>[
               Container(
-                  color: Color.fromRGBO(20, 90, 120, 1),
                   height: MediaQuery.of(context).size.height / 8,
+                  decoration: BoxDecoration(
+                      color: Color.fromRGBO(20, 90, 120, 1),
+                      image: DecorationImage(
+                          image:AssetImage('assets/images/appbar_background.png'),
+                          fit: BoxFit.cover)),
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0, left: 10.0),
                     child: Row(
