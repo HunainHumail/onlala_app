@@ -29,7 +29,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -47,7 +46,16 @@ flutter:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
   assets:
+    - assets/images/Email.png
+    - assets/images/smartphone.png
     - assets/images/logo.png
+    - assets/images/back.png
+    - assets/images/profile.png
+    - assets/images/settings.png
+    - assets/images/logout.png
+    - assets/images/payment.png
+    - assets/images/help.png
+    - assets/images/homedevice.png
     - assets/images/onboarding1.png
     - assets/images/onboarding2.png
     - assets/images/onboarding3.png

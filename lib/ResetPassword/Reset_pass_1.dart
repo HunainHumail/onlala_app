@@ -55,7 +55,7 @@ class _ResetPassword_firstState extends State<ResetPassword_first> {
                     child: Row(
                       children: <Widget>[
                         Image.asset(
-                          'assets/images/smartphone.png',
+                          'assets/images/Email.png',
                           width: 100.0,
                         ),
                         SizedBox(
@@ -115,7 +115,7 @@ class _ResetPassword_firstState extends State<ResetPassword_first> {
                     child: Row(
                       children: <Widget>[
                         Image.asset(
-                          'assets/images/Email.png',
+                          'assets/images/smartphone.png',
                           width: 100.0,
                         ),
                         SizedBox(
