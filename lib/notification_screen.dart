@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:toggle_button/toggle_button.dart';
 
-class Notification_Screen extends StatelessWidget {
-  Notification_Screen ({Key key}) : super(key : key);
+class NotificationScreen extends StatefulWidget {
+  NotificationScreen ({Key key}) : super(key:key);
 
-  bool status = false;
+  _NotificationScreen createState() => _NotificationScreen();
+
+}
+
+class _NotificationScreen extends State<NotificationScreen> {
+
+  bool isSwitchedSMS = true;
+  bool isSwitchedEmail = false;
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -14,29 +22,72 @@ class Notification_Screen extends StatelessWidget {
         backgroundColor: Color.fromRGBO(30, 115, 148, 0.9),
         title: Center(child: Text("Notifications")),
       ),
-        body: Container(
-          alignment: Alignment.center,
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.only(top: 50),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              Container (
-                padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
-                child: ToggleButton(
-                  borderRadius: 40.0,
-                  size: 15.0,
-                  onChange: (sta) {
-                    print (sta);
-                  },
-                  axis: ToggleButtonAlignment.horizontal,
-                ),
-              )
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+
+                  Padding(
+                    padding: const EdgeInsets.all(11),
+                    child: Text(
+                      'SMS Notifications',
+                      style: TextStyle(
+                          fontSize: 20
+                      ),
+                    ),
+                  ),
+                  Spacer(),
+                  Switch(
+                    value: isSwitchedSMS,
+                    onChanged: (value) {
+                      setState(() {
+                        isSwitchedSMS = value;
+                      });
+                    },
+                    activeTrackColor: Color.fromRGBO(30, 115, 148, 0.9),
+                    activeColor: Colors.indigoAccent,
 
 
+                  )
+                ],
+              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+
+                  Padding(
+                    padding: const EdgeInsets.all(11),
+                    child: Text(
+                      'Email Notifications',
+                      style: TextStyle(
+                          fontSize: 20
+                      ),
+                    ),
+                  ),
+                  Spacer(),
+                  Switch(
+                    value: isSwitchedEmail,
+                    onChanged: (value) {
+                      setState(() {
+                        isSwitchedEmail = value;
+                      });
+                    },
+                    activeTrackColor: Color.fromRGBO(30, 115, 148, 0.9),
+                    activeColor: Colors.indigoAccent,
+
+
+                  )
+                ],
+              ),
             ],
           ),
-
         )
+      ),
     );
-
   }
 }
