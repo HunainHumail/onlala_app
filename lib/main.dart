@@ -8,6 +8,7 @@ import 'package:onlala_app/Settings/change_password.dart';
 import 'package:onlala_app/Settings/notification_screen.dart';
 import 'package:onlala_app/app_home.dart';
 import 'package:onlala_app/onboarding_screen.dart';
+import 'package:onlala_app/subcategory_products_screen.dart';
 import 'ResetPassword/Reset_pass_1.dart';
 import 'ResetPassword/Reset_pass_4.dart';
 import 'Settings/settings.dart';
@@ -20,7 +21,7 @@ void main() {
 
       debugShowCheckedModeBanner: false,
       // home: OnboardingPage(),
-      home: Settings(),
+      home: SubcategoryScreen(),
     )
   );
 }

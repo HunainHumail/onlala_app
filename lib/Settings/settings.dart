@@ -12,7 +12,7 @@ class _Settings extends State<Settings> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(30, 115, 148, 0.9),
-        title: Center(child: Text("Change Password")),
+        title: Center(child: Text("Settings")),
       ),
       body: SafeArea(
         child: Padding(
@@ -27,7 +27,7 @@ class _Settings extends State<Settings> {
                   children: <Widget>[
                     ListTile(
                       leading: Icon(Icons.edit, color: Colors.black, size: 28,),
-                      title: Text('Profile', style: TextStyle(color: Colors.black, fontSize: 17)),
+                      title: Text('Change Password', style: TextStyle(color: Colors.black, fontSize: 17)),
                       trailing: Icon(Icons.keyboard_arrow_right, color: Colors.grey),
 
                     ),

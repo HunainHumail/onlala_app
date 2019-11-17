@@ -66,6 +66,7 @@ class _ChangePassword extends State<ChangePassword> {
                 padding: EdgeInsets.all(24.0),
                 child: _btnSetPassword(),
               ),
+
             ],
           ),
         )
