@@ -10,6 +10,7 @@ import 'package:onlala_app/app_home.dart';
 import 'package:onlala_app/onboarding_screen.dart';
 import 'ResetPassword/Reset_pass_1.dart';
 import 'ResetPassword/Reset_pass_4.dart';
+import 'Settings/settings.dart';
 import 'splash_screen_one.dart';
 
 void main() {
@@ -19,7 +20,7 @@ void main() {
 
       debugShowCheckedModeBanner: false,
       // home: OnboardingPage(),
-      home: AppHome(),
+      home: Settings(),
     )
   );
 }
