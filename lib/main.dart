@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:onlala_app/MyProducts/product_tabs.dart';
 import 'package:onlala_app/Profile/Profile_messages.dart';
 import 'package:onlala_app/Profile/Profile_page.dart';
 import 'package:onlala_app/Profile/Profile_settings.dart';
@@ -21,7 +22,7 @@ void main() {
 
       debugShowCheckedModeBanner: false,
       // home: OnboardingPage(),
-      home: SubcategoryScreen(),
+      home: ProductTabs(),
     )
   );
 }
