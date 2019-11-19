@@ -64,7 +64,6 @@ class _ResetPassword_thirdState extends State<ResetPassword_third> {
                       autofocus: true,
                       // obscureText: true,
                       decoration: InputDecoration(
-                        hintText: 'Enter Username',
                         border: InputBorder.none,
                         counterText: "",
                       ),
