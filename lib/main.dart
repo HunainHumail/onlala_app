@@ -16,7 +16,7 @@ void main() {
 
       debugShowCheckedModeBanner: false,
       // home: OnboardingPage(),
-      home: ProfileMessages(),
+      home: ProfilePage(),
     )
   );
 }
