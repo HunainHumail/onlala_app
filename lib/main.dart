@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:onlala_app/MyProducts/product_tabs.dart';
+import 'package:onlala_app/MyProducts/single_product_image.dart';
 import 'package:onlala_app/Profile/Profile_Info.dart';
 import 'package:onlala_app/Profile/Profile_messages.dart';
 import 'package:onlala_app/Profile/Profile_page.dart';
@@ -23,7 +24,7 @@ void main() {
 
       debugShowCheckedModeBanner: false,
       // home: OnboardingPage(),
-      home: ProfileDetails(),
+      home: SingleProductImage(),
 
     )
   );

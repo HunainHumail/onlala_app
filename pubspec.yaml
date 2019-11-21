@@ -29,6 +29,8 @@ dependencies:
   carousel_slider: ^1.3.1
   toggle_button: ^1.0.1
   simple_slider: ^0.0.1
+  carousel_pro: ^1.0.0
+
 
 
 
@@ -80,7 +82,9 @@ flutter:
     - assets/images/buyerpic2.png
     - assets/images/buyerpic3.png
     - assets/images/productsample.png
-    - assets/images/5.JPG
+    - assets/images/cover1.png
+    - assets/images/cover2.jpg
+    - assets/images/cover3.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
