@@ -44,7 +44,7 @@ class Orders extends StatelessWidget {
                               children: <Widget>[
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
-                                  child: Text('ID:22323234',style: TextStyle(color: Colors.grey),),
+                                  child: Text('ID:22323234', style: TextStyle(color: Colors.grey),),
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
@@ -62,8 +62,6 @@ class Orders extends StatelessWidget {
                                   padding: const EdgeInsets.only(left: 8.0, top: 15),
                                   child: Text('Total Price \$100' , style: TextStyle(fontSize: 15,color:Color.fromRGBO(30, 115, 148, 0.9) )),
                                 ),
-
-
                               ],
                             ),
                           )
