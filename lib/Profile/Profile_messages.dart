@@ -164,6 +164,8 @@ class _ProfileMessagesState extends State<ProfileMessages> {
           _RecievedMessages("Hello"),
           SizedBox(height: 20.0),
           _RecievedMessages("I need help with uploading product"),
+          SizedBox(height: 20.0),
+          _SentMessages("OH OK! Will help you!"),
         ],
       ),
 floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
